@@ -1,0 +1,23 @@
+{
+  "name": "linechatbot",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --no-warnings index.js"
+  },
+  "author": "Sun Putawan",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@line/bot-sdk": "^9.5.1",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "openai": "^4.78.1"
+  },
+  "overrides": {
+    "whatwg-url": "13.0.0"
+  }
+}
