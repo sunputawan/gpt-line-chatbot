@@ -22,7 +22,7 @@ const handleEvent = async (event) => { // handle any interact from users
 
     const replyMessage = (event.message.type === 'text') ? 
     await chatCompletion(event.message.text) : 
-    "Sorry!\nWe weren't be able to recieve any data other than a text!";
+    "Sorry!\nWe weren't be able to recieve any data other than a text.";
 
     // console.log(replyMessage);
 
