@@ -15,10 +15,11 @@ app.post('/webhook', async (req, res) => {
 });
 
 const handleEvent = async (event) => { // handle any interact from users
-    console.log(event);
+    //console.log(event);
     if (event.type !== 'message') { // ignore all non-message events
         return Promise.resolve(null);
     }
+    console.log(`userId: ${event.source.userId}\ntext: ${event.message.text}\n`);
 
     const replyMessage = (event.message.type === 'text') ? 
     await chatCompletion(event.message.text) : 
